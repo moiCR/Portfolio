@@ -1,0 +1,62 @@
+---
+import GithubIcon from "../assets/github.svg";
+import CVIcon from "../assets/cv.svg";
+---
+
+<section class="relative w-full h-full">
+    <div
+        class="absolute inset-0 bg-[url('../assets/background.webp')] bg-cover bg-center blur-md"
+    >
+    </div>
+    <div
+        class="absolute gap-4 z-10 flex flex-col justify-start items-start h-full px-24 pt-32"
+    >
+        <h1
+            class="text-5xl font-bold text-blue-300 drop-shadow-lg mt-48 mx-32 max-md:mx-0"
+        >
+            Moisés Marenco
+        </h1>
+
+        <p
+            class="mx-32 max-md:mx-0 text-xl max-md:text-lg text-gray-300 leading-relaxed w-3xl"
+        >
+            <strong>Desarrollador web</strong> con enfoque en <strong>Front End</strong
+            >, apasionado por construir aplicaciones dinámicas y eficientes,
+            siempre en constante aprendizaje para integrar las últimas
+            tendencias tecnológicas.
+        </p>
+
+        <ul class="mx-32 max-md:mx-0 flex flex-row gap-4">
+            <li>
+                <a
+                    href="https://github.com/moiCR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+                    aria-label="Ver mi perfil de GitHub"
+                >
+                    <img
+                        class="w-6 h-6"
+                        src={GithubIcon.src}
+                        alt="Icono de github"
+                    />
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="/cv.pdf"
+                    download="Mi_CV.pdf"
+                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+                    aria-label="Descargar mi CV en PDF"
+                >
+                    <img
+                        class="w-6 h-6"
+                        src={CVIcon.src}
+                        alt="Icono de un CV"
+                    />
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

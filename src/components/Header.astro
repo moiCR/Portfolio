@@ -1,0 +1,87 @@
+<header
+    class="absolute z-10 justify-end items-center flex h-14 w-full min-w-full bg-black/15 shadow-[0_4px_30px_rgba(0_0_0_0.1)] backdrop-blur-[8.8px] border border-black/40"
+>
+    <section class="flex items-center">
+        <nav class="flex items-center">
+            <ul class="flex flex-row gap-8 items-center max-md:hidden">
+                <li>
+                    <a
+                        class="nav__item px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-lg backdrop-blur-sm"
+                        href="/"
+                    >
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav__item px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-lg backdrop-blur-sm"
+                        href="#sobremi"
+                    >
+                        Sobre Mi
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav__item px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-lg backdrop-blur-sm"
+                        href="#proyectos"
+                    >
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav__item px-3 py-2 text-white/80 hover:text-white transition-all duration-300 hover:bg-white/10 rounded-lg backdrop-blur-sm"
+                        href="#educacion"
+                    >
+                        Educación
+                    </a>
+                </li>
+            </ul>
+
+            <button
+                class="md:hidden p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+            >
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </section>
+</header>
+
+<style>
+    .nav__item {
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav__item::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent
+        );
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+    }
+
+    .nav__item:hover::after {
+        width: 100%;
+    }
+</style>
