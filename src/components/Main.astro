@@ -9,54 +9,47 @@ import CVIcon from "../assets/cv.svg";
     >
     </div>
     <div
-        class="absolute gap-4 z-10 flex flex-col justify-start items-start h-full px-24 pt-32"
+        class="absolute gap-4 z-10 flex flex-col justify-start items-start h-[calc(100vh-56px)] px-24 pt-32 mt-14"
     >
         <h1
-            class="text-5xl font-bold text-blue-300 drop-shadow-lg mt-48 mx-32 max-md:mx-0"
+            class="scroll-fade text-7xl font-bold text-blue-300 drop-shadow-lg mt-48 mx-32 max-md:mx-0 max-md:text-5xl max-md:mt-14 max-md:text-center"
         >
-            Moisés Marenco
+            Hola, soy Moisés <span>&lt;/&gt;</span>
         </h1>
 
         <p
-            class="mx-32 max-md:mx-0 text-xl max-md:text-lg text-gray-300 leading-relaxed w-3xl"
+            class="scroll-fade mx-32 max-md:mx-0 text-2xl max-md:text-lg text-gray-300 leading-relaxed w-3xl max-md:w-auto max-md:text-center"
         >
-            <strong>Desarrollador web</strong> con enfoque en <strong>Front End</strong
-            >, apasionado por construir aplicaciones dinámicas y eficientes,
-            siempre en constante aprendizaje para integrar las últimas
-            tendencias tecnológicas.
+            Soy un estudiante de Ingeniería en Sistemas apasionado por la
+            creatividad y la resolución de problemas. Estoy en constante aprendizaje
+            para convertirme en alguien capaz de crear cualquier cosa.
         </p>
 
-        <ul class="mx-32 max-md:mx-0 flex flex-row gap-4">
+        <ul class="mx-32 max-md:mx-0 flex flex-row gap-4 max-md:hidden">
             <li>
                 <a
                     href="https://github.com/moiCR"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10 hover:scale-105 rounded-lg transition-all duration-300"
                     aria-label="Ver mi perfil de GitHub"
                 >
-                    <img
-                        class="w-6 h-6"
-                        src={GithubIcon.src}
-                        alt="Icono de github"
-                    />
+                    <GithubIcon class="w-6 h-6 transition-all duration-300 hover:fill-blue-400 hover:stroke-blue-400"/>
                 </a>
             </li>
 
             <li>
                 <a
                     href="/cv.pdf"
-                    download="Mi_CV.pdf"
-                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300"
+                    download="Moises-Marenco-CV.pdf"
+                    class="inline-flex items-center cursor-pointer p-2 text-white/80 hover:text-white hover:bg-white/10  hover:scale-105 rounded-lg transition-all duration-300"
                     aria-label="Descargar mi CV en PDF"
                 >
-                    <img
-                        class="w-6 h-6"
-                        src={CVIcon.src}
-                        alt="Icono de un CV"
-                    />
+                    <CVIcon class="w-6 h-6 hover:stroke-blue-400 transition-all duration-300" />
                 </a>
             </li>
         </ul>
     </div>
 </section>
+
+

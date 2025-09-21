@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+.scroll-fade {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+  }
+  
+  .hidden-left {
+    transform: translateX(-50px);
+  }
+  
+  .hidden-right {
+    transform: translateX(50px);
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  

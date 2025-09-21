@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -25,5 +26,27 @@ import "../styles/global.css";
 		background: #131313;
 		color: white;
 		stroke: white;
+		scroll-behavior: smooth;
 	}
 </style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const elements = document.querySelectorAll(".scroll-fade");
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("show");
+					} else {
+						entry.target.classList.remove("show");
+					}
+				});
+			},
+			{ threshold: 0.2 },
+		);
+
+		elements.forEach((el) => observer.observe(el));
+	});
+</script>
