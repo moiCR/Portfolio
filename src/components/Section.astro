@@ -1,0 +1,7 @@
+---
+const { className = "" } = Astro.props;
+---
+
+<section class={"h-full w-full relative flex" + className}>
+    <slot />
+</section>

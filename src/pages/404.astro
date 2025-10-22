@@ -1,3 +1,29 @@
 ---
-Astro.redirect("/");
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import Header from "../components/Header.astro";
 ---
+
+<Layout>
+    <Section>
+        <Header />
+        <div
+            class="absolute inset-0 bg-[url('../assets/background.webp')] bg-cover bg-center blur-md"
+        >
+        </div>
+        <div
+            class="absolute gap-4 z-10 flex flex-col h-[calc(100vh-56px)] w-full px-24 items-center justify-center"
+        >
+            <h1
+                class="animate-slide-in-top text-center text-9xl font-bold text-blue-300 drop-shadow-lg mt-48 mx-32 max-md:mx-0 max-md:text-6xl max-md:text-center"
+            >
+                Error 404
+            </h1>
+            <h1
+                class="animate-slide-in-bottom text-4xl text-center max-md:text-3xl text-white/70"
+            >
+                Esta pagina no existe
+            </h1>
+        </div>
+    </Section>
+</Layout>
